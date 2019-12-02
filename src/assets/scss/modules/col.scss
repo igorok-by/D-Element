@@ -1,0 +1,123 @@
+.col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &--align-self-start {
+    align-self: flex-start;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+
+  &--sp-between {
+    justify-content: space-between;
+  }
+
+  &--photo {
+    min-width: 650px;
+    padding-right: 135px;
+  }
+  
+  &--light {
+    background-color: $default-bckgr;
+  }
+
+  &--z-ind5 {
+    z-index: 5;
+  }
+  
+  &--w535 {
+    min-width: 535px;
+  }
+
+  &--w470 {
+    width: 470px;
+  }
+
+  &--w266 {
+    max-width: 266px;
+  }
+  
+  &--mx30 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  &--mr30 {
+    margin-right: 30px;
+  }
+
+  &--mb30 {
+    margin-bottom: 30px;
+  }
+
+  &--px30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  &--pl30 {
+    padding-left: 30px;
+  }
+
+  @media screen and (max-width: $desktopWidth) {
+
+    &--photo {
+      min-width: 575px;
+      padding-right: 60px;
+    }
+
+    &--w535 {
+      min-width: 400px;
+    }
+
+    &--dw-mr30 {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: $smDesktopWidth) {
+
+    &--photo {
+      min-width: 440px;
+      padding-right: 40px;
+    }
+
+    &--smd-order1 {
+      order: 1;
+    }
+
+    &--smd-order2 {
+      order: 2;
+    }
+
+    &--smd-order3 {
+      order: 3;
+    }
+  }
+
+  @media screen and (max-width: $tableWidth) {
+
+    &--tw-align-center {
+      align-items: center;
+    }
+
+    &--tw-d-none {
+      display: none;
+    }
+
+    &--tw-ml30 {
+      margin-left: 30px;
+    }
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    &--w470 {
+      width: 100%;
+    }
+  }
+}

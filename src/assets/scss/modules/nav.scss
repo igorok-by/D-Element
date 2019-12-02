@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  margin-right: -8px;
+  margin-left: -8px;
+
+  &__link {
+    padding: rem(7) rem(8);
+    font-size: rem(14);
+    font-weight: 600;
+    color: $default-color;
+      border-bottom: 1px solid transparent;
+    transition: $default-transition;
+  }
+  &__link:hover {
+    border-bottom: 1px solid $warning-bckgr;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    
+    width: auto;
+  }
+}

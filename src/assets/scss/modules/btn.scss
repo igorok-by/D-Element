@@ -1,0 +1,107 @@
+.btn {
+  display: inline-block;
+  min-width: 220px;
+  padding: rem(22) rem(55) rem(20);
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: rem(16);
+  color: $primary-color;
+  background-color: $warning-color;
+  text-align: center;
+  border: 1px solid $warning-color;
+  border-radius: rem(30);
+  transition: $default-transition;  
+
+  &:hover {
+    background-color: transparent;
+    color: $warning-color;
+  }
+  
+  &--dark {
+    margin-top: rem(30);
+    margin-bottom: rem(50);
+    color: $primary-bckgr;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+
+  &--dark:hover {
+    background-color: transparent;
+    color: $primary-color;
+  }
+
+  &--uppercase {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &--invert {
+    padding-top: rem(19);
+    padding-bottom: rem(20);
+    background-color: transparent;
+    border: 1px solid $warning-bckgr;
+    color: $warning-color;
+  }
+  
+  &--invert:hover {
+    background-color: $warning-color;
+    border: 1px solid $warning-color;
+    color: $default-color;
+  }
+
+  &--pos-bottom {
+    position: absolute;
+    bottom: -107px;
+    left: 47px;
+  }
+
+  &--submit {
+    margin-top: 34px;
+    padding: rem(19) rem(42) rem(18);
+    font-weight: 400;
+  }
+
+  &--scroll-top {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    z-index: 1000;
+    min-width: unset;
+    padding: 20px 26px;
+    background-color: $default-color;
+    border: none;
+    border-radius: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: $long-transition;
+  }
+
+  &--scroll-top.show {
+    opacity: .65;
+    visibility: visible;
+  }
+
+  &--scroll-top:hover {
+    background-color: $warning-color;
+  }
+
+  &--scroll-top:active {
+    background-color: transparent;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+
+    &--pos-bottom {
+      position: static;
+      margin-top: 40px;
+    }
+
+    &--dark {
+      align-self: center;
+    }
+
+    &--scroll-top {
+      right: 30px;
+    }
+  }
+}
